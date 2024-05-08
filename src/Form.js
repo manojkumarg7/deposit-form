@@ -13,7 +13,7 @@ const Form = () => {
 
       <input
         type="number"
-        placeholder="Ennter Amount"
+        placeholder="Enter Amount"
         value={amount}
         onChange={(e) => {
           let data = e.target.value;
@@ -64,7 +64,7 @@ const Form = () => {
 
       <input
         type="text"
-        placeholder="Ennter Name"
+        placeholder="Enter Name"
         value={name}
         onChange={(e) => {
           let data = e.target.value;
@@ -84,7 +84,7 @@ const Form = () => {
       <br />
       <input
         type="number"
-        placeholder="Ennter Number"
+        placeholder="Enter Number"
         value={mobile}
         onChange={(e) => {
           let data = e.target.value;
