@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dposit-form/static/css/main.f855e6bc.css",
-    "main.js": "/dposit-form/static/js/main.711d7b77.js",
-    "static/js/453.ddf521d4.chunk.js": "/dposit-form/static/js/453.ddf521d4.chunk.js",
-    "static/media/logo.svg": "/dposit-form/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/dposit-form/index.html",
-    "main.f855e6bc.css.map": "/dposit-form/static/css/main.f855e6bc.css.map",
-    "main.711d7b77.js.map": "/dposit-form/static/js/main.711d7b77.js.map",
-    "453.ddf521d4.chunk.js.map": "/dposit-form/static/js/453.ddf521d4.chunk.js.map"
+    "main.css": "/deposit-form/static/css/main.f855e6bc.css",
+    "main.js": "/deposit-form/static/js/main.2ee8af8c.js",
+    "static/js/453.ddf521d4.chunk.js": "/deposit-form/static/js/453.ddf521d4.chunk.js",
+    "static/media/logo.svg": "/deposit-form/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/deposit-form/index.html",
+    "main.f855e6bc.css.map": "/deposit-form/static/css/main.f855e6bc.css.map",
+    "main.2ee8af8c.js.map": "/deposit-form/static/js/main.2ee8af8c.js.map",
+    "453.ddf521d4.chunk.js.map": "/deposit-form/static/js/453.ddf521d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.711d7b77.js"
+    "static/js/main.2ee8af8c.js"
   ]
 }
