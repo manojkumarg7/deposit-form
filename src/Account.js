@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import "./AccountStyle.css";
 const Account = () => {
   let data = useSelector((state) => {
     console.log(state);
@@ -8,62 +9,37 @@ const Account = () => {
   return (
     <div>
       <h1>Account details</h1>
-      <table style={{ borderCollapse: "collapse", border: "1px solid black" }}>
-        <thead>
-          <tr>
-            <th style={{ border: "1px solid black", padding: "8px" }}>
-              Balance
-            </th>
-            <th style={{ border: "1px solid black", padding: "8px" }}>
-              Mobile No
-            </th>
-            <th style={{ border: "1px solid black", padding: "8px" }}>
-              UserName
-            </th>
-          </tr>
-        </thead>
+      <table>
+        <tr>
+          <th>Balance</th>
+          <th>Mobile No</th>
+          <th>UserName</th>
+        </tr>
         <tbody>
           <tr>
-            <td style={{ border: "1px solid black", padding: "8px" }}>
-              {data.account.balance}
-            </td>
-            <td style={{ border: "1px solid black", padding: "8px" }}>
-              {data.account.fullName}
-            </td>
-            <td style={{ border: "1px solid black", padding: "8px" }}>
-              {data.account.mobileNO}
-            </td>
+            <td>{data.account.balance}</td>
+            <td>{data.account.fullName}</td>
+            <td>{data.account.mobileNO}</td>
           </tr>
         </tbody>
       </table>
       <h1>Transction Details</h1>
-      <table style={{ borderCollapse: "collapse", border: "1px solid black" }}>
-        <thead>
-          <tr>
-            <th style={{ border: "1px solid black", padding: "8px" }}>ID</th>
-            <th style={{ border: "1px solid black", padding: "8px" }}>
-              Amount
-            </th>
-            <th style={{ border: "1px solid black", padding: "8px" }}>Type</th>
-            <th style={{ border: "1px solid black", padding: "8px" }}>Date</th>
-          </tr>
-        </thead>
+      {/* ----- */}
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Amount</th>
+          <th>Type</th>
+          <th>Date</th>
+        </tr>
         <tbody>
           {data.transction.map((tr, index) => {
             return (
               <tr key={tr.id}>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  {tr.id}
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  {tr.amount}
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  {tr.type}
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  {tr.date.toString()}
-                </td>
+                <td>{tr.id}</td>
+                <td>{tr.amount}</td>
+                <td>{tr.type}</td>
+                <td>{tr.date.toString()}</td>
               </tr>
             );
           })}
